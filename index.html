@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f4f7fa">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="올해의 나">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAEd0lEQVR42u2dvWoUURiGT05GSCOYkNYuECRegChWWgjeioi9tb2ItyJY2IniBSgi7g0IYSMIYhOxWJB1/5zdnZn93vd7nipZceZ83zz7njOzs5O9r99+FoBFVFoAyAHIAcgByAG7pKEFE04OL6d/HV3s0xPkmNVi+sXkilTM2PhfkSOvGfhRMQM/kAOQo58wyBkeJAcgB6xPuusc1z6+KqWUuw82+4/fbz5EDlMnuttOBkv27G/2WabF8Trhcf729cLXvRVpEmrR+S5cFfFMjpZatAyPZbFhnyI1rRktj3pLM4YJKpJj6HlkRX60N8MyQnzk2PKNO6PIZlqY+WEiR8BIN/CjYkaqUeWSI/IxUPejYgZ+GMqh0nddPypmMForORR7rThm7ucAIzl0p3C5kZMc4CKH+pUDrfFXOksVTCuAHJBQDqdbaVRqITkAOcBVDr/bMyUqIjkAOQA5IJccfgsOlbpIDkAOQA5ADkAO2CnyX4c8OQ7t9+j8N8mBGaoj9JRDpe+6frDmADs5tN6OouFBcoCXHIpvRMUxkxyAHJBBDt0zQ7mRkxyAHIAckFcO6Y8q5Maf4u+tPH3yaPLDs+cvo22N5AhhxszPEbaGHFHM2P6Idrs15ADkAOSQY37NuM0qstutIUcsP7Y/lt1uLThiNxirX+coUrccs+b4hx9vXtCEvzS0YIUfV+8/Rg6lTB5yZpkJku1d0foaC8lBqKSR49eXT9O/Hpye9S3Klev3htkjC9IuzVj4SrfMmDHAHpFjk2l72VHp72jNm7F6j3Lfm62umdG3H8vMcMoPFqRrML0IdZo+rOQY7IS2w1MSxWcxmCTHwenZirfyWmcQLYXocI9hEX54y3x4LDxavR6nlnsUfYSL1ans/FHp+x08/B5Jjs3DQ+jcmzVHXxx9fldKGUsMtZRSyvjGHZJjIC1E0VKkYgbjd5BD3Qy5KrgTDPTl8IgNrVpIDkAOQA5ADkCOKRSvMKrXQnKAhRxHt285nMfqVCEjx8nhpYEfk/FPaomPxgdv890cv/+gHhiji33k6N4MG4L7UTGD6iTl8DYjfo2VrlGpmBx5zIhcb6VTVC0jR04zYtZe6Q4dUD2VBeQgNiL2odIR/GBaAU05iI2YPSE5ILAcxEbYzpAcEFUOYiNyf0gOQA7QkoM5JXiXSA5ADkAOQA6wloPVaPxekRyAHIAcgByAHIAcgByAHIAcgByAHIMT/4lYcdhVr0gOQA5ADkAOcJeDNWnwLpEcgBwgJwczS+T+kBwQWA7CI2xnSA6ILQfhEbMnJAeEl4PwCNiNSkcwg2kFxOUgPEJ1oNIdaleaVnL6EbDqSqeoV29BmsePsJVWukaNqqey3n7wF6nxQ7WuSh+pSFsOMz9Uamnkeir9GEItxSv9ZeQOyaEbIaJCN0UWCUWkl0rCcgRXxGAFLS9HQEVsTqxM5Jg5KjuxxO9iTFMcGdIS4wv8TbGmP0syfCjYlBzMH8u1dMl5/1FTssL9qv+Fu88BOQA5ADkAOQA5ICZ/AE64uTSbZn0xAAAAAElFTkSuQmCC">
+<title>올해의 나 수집하기</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f7fa;--card:#fff;--ink:#3b4a5a;--sub:#92a0ae;--line:#e6edf3;--sky:#dbe9f6;--sky2:#a8c9e6;--sheet:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#10151b;--card:#18202a;--ink:#e7eef5;--sub:#8795a5;--line:#263140;--sky:#27384b;--sheet:#18202a}}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Noto Sans KR',-apple-system,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;font-weight:300;line-height:1.6;min-height:100vh;padding-top:env(safe-area-inset-top,0px)}
+button{font-family:inherit;color:inherit}
+.wrap{position:relative;z-index:1;max-width:520px;margin:0 auto;padding:22px 16px calc(120px + env(safe-area-inset-bottom,0px))}
+.deco{display:block;width:190px;margin:0 auto 4px}
+.brand{text-align:center;font-size:11px;letter-spacing:.3em;color:var(--sub)}
+h1{text-align:center;font-size:21px;font-weight:500;margin:4px 0 2px}
+.who{display:flex;justify-content:center;align-items:baseline;gap:4px;margin-top:8px;font-size:14px;color:var(--sub)}
+.who input{width:92px;text-align:center;border:0;border-bottom:1px dashed var(--sky2);background:transparent;color:var(--ink);font:inherit;font-size:16px;font-weight:500;padding:2px 4px;outline:none;border-radius:0}
+.bar{height:3px;background:var(--line);border-radius:3px;margin:16px 0 5px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--sky2);transition:width .3s}
+.prog{font-size:12px;color:var(--sub);text-align:right;margin-bottom:12px}
+.chips{display:flex;gap:8px;overflow-x:auto;margin:0 -16px 14px;padding:2px 16px 6px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:0 0 auto;border:1px solid var(--line);background:var(--card);border-radius:16px;padding:8px 14px;text-align:left;cursor:pointer;min-width:98px}
+.chip b{display:flex;align-items:center;gap:6px;font-size:13px;font-weight:500;white-space:nowrap}
+.chip b i{width:8px;height:8px;border-radius:50%;display:inline-block}
+.chip small{display:block;font-size:11px;color:var(--sub);margin-top:1px}
+.chip.on{border-color:var(--sky2);background:var(--sky)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:26px;padding:24px 20px 20px;box-shadow:0 10px 30px -18px rgba(70,110,150,.3);touch-action:pan-y}
+.meta{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--sub)}
+.tag{color:#3b4a5a;font-weight:500;padding:2px 11px;border-radius:999px}
+.num{font-size:42px;font-weight:300;color:var(--sky2);line-height:1;margin:16px 0 4px;font-variant-numeric:tabular-nums}
+.q{font-size:23px;font-weight:500;line-height:1.35;margin:0 0 14px;word-break:keep-all}
+textarea{width:100%;min-height:170px;border:0;border-top:1px solid var(--line);background:transparent;color:var(--ink);font:inherit;font-size:16px;line-height:1.7;resize:none;outline:none;padding:14px 0 0;display:block;border-radius:0}
+textarea::placeholder{color:var(--sub);opacity:.6}
+.tools{display:flex;gap:8px;justify-content:center;margin-top:22px}
+.tools button{flex:1;max-width:200px;border:1px solid var(--sky2);background:var(--sky);border-radius:999px;padding:11px 8px;font-size:13px;font-weight:500;cursor:pointer}
+.st{text-align:center;font-size:11px;color:var(--sub);margin-top:12px;min-height:16px}
+.dock{position:fixed;left:0;right:0;bottom:0;z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-top:1px solid var(--line);padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px))}
+.dock div{max-width:520px;margin:0 auto;display:flex;gap:10px;align-items:center}
+.dock button{height:50px;border-radius:25px;border:1px solid var(--line);background:var(--card);font-size:18px;cursor:pointer}
+.dock button:disabled{opacity:.3}
+.dock .arrow{width:56px}
+.dock .cal{flex:1;font-size:14px;font-weight:500;background:var(--sky);border-color:var(--sky2)}
+.ov{position:fixed;inset:0;z-index:10;background:rgba(30,45,60,.35);display:none;align-items:flex-end;justify-content:center}
+.ov.show{display:flex}
+.sheet{width:100%;max-width:520px;background:var(--sheet);border-radius:26px 26px 0 0;padding:18px 18px calc(18px + env(safe-area-inset-bottom,0px));max-height:88vh;overflow-y:auto}
+.mt{display:flex;gap:8px;margin-bottom:10px}
+.mt button{flex:1;border:1px solid var(--line);background:var(--card);border-radius:999px;padding:8px;font-size:14px;cursor:pointer}
+.mt button.on{background:var(--sky);border-color:var(--sky2);font-weight:500}
+.grid{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;text-align:center}
+.wd{font-size:11px;color:var(--sub);padding:4px 0}
+.d{aspect-ratio:1;border:0;border-radius:14px;background:transparent;font-size:15px;position:relative;cursor:pointer;color:var(--ink);padding:0}
+.d.off{opacity:.2;pointer-events:none}
+.d.td{box-shadow:inset 0 0 0 1.5px var(--sky2)}
+.d.cur{background:var(--sky);font-weight:700}
+.d u{position:absolute;left:50%;bottom:5px;width:5px;height:5px;margin-left:-2.5px;border-radius:50%;background:var(--sky2)}
+.leg{font-size:11px;color:var(--sub);margin:10px 0 12px;text-align:center}
+.sheet .row{display:flex;gap:8px}
+.sheet .row button{flex:1;border:1px solid var(--sky2);background:var(--sky);border-radius:999px;padding:11px;font-size:13px;font-weight:500;cursor:pointer}
+.sheet .row .g{background:var(--card);border-color:var(--line)}
+.sn{position:fixed;top:-10px;border-radius:50%;background:var(--sky2);opacity:.5;pointer-events:none;animation:fall linear infinite}
+@keyframes fall{to{transform:translateY(108vh) translateX(36px)}}
+@media (prefers-reduced-motion:reduce){.sn{display:none}}
+@media print{.dock,.tools,.chips,.sn,.ov{display:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<svg class="deco" viewBox="0 0 240 96" aria-hidden="true">
+<defs><g id="tr"><ellipse cx="0" cy="67" rx="16" ry="3.5" fill="#e3ebf2"/><rect x="-4" y="54" width="8" height="13" rx="4" fill="#d6c6b5"/>
+<circle cy="46" r="23" fill="#a6c6ba"/><circle cy="29" r="18" fill="#b3d0c4"/><circle cy="12" r="13" fill="#c2dacf"/>
+<ellipse cx="0" cy="3" rx="8" ry="4.5" fill="#fffaf2"/><ellipse cx="0" cy="20" rx="12" ry="5" fill="#fffaf2"/><ellipse cx="0" cy="37" rx="16" ry="5.5" fill="#fffaf2"/></g></defs>
+<ellipse cx="120" cy="87" rx="114" ry="7" fill="#e6eef5"/>
+<use href="#tr" x="36" y="12"/>
+<use href="#tr" x="204" y="20" transform="translate(204 20) scale(.8) translate(-204 -20)"/>
+<circle cx="122" cy="66" r="22" fill="#e1eaf3"/><circle cx="121" cy="34" r="15" fill="#e1eaf3"/>
+<circle cx="120" cy="64" r="22" fill="#fffaf3"/><circle cx="120" cy="33" r="15" fill="#fffdf8"/>
+<g stroke="#c8b6a4" stroke-width="2.5" stroke-linecap="round"><line x1="100" y1="58" x2="89" y2="50"/><line x1="140" y1="58" x2="151" y2="50"/></g>
+<path d="M105 27 Q120 5 135 27Z" fill="#ebbdab"/><circle cx="120" cy="8" r="4.5" fill="#fffaf3"/>
+<rect x="104" y="43" width="32" height="7" rx="3.5" fill="#edc0bb"/><rect x="127" y="46" width="7" height="13" rx="3.5" fill="#e6b2ad"/>
+<circle cx="111" cy="36" r="3.2" fill="#f7d6cd" opacity=".85"/><circle cx="129" cy="36" r="3.2" fill="#f7d6cd" opacity=".85"/>
+<g fill="#7a6d64"><circle cx="115" cy="31" r="1.5"/><circle cx="125" cy="31" r="1.5"/></g>
+<path d="M120 34 L131 36.5 L120 38Z" fill="#f2b98a"/>
+<g fill="#dccdbf"><circle cx="120" cy="58" r="1.8"/><circle cx="120" cy="67" r="1.8"/></g>
+</svg>
+<div class="brand">2026 · 11.12 — 12.31</div>
+<h1>올해의 나 수집하기</h1>
+<div class="who"><input id="nm" maxlength="8" value="나" aria-label="이름 바꾸기" placeholder="이름"><span>의 기록</span></div>
+<div class="bar"><i id="bar"></i></div>
+<div class="prog" id="prog"></div>
+<div class="chips" id="chips"></div>
+<div class="card" id="card"></div>
+<div class="tools"><button id="copy">기록 복사하기</button><button id="save">텍스트로 저장</button></div>
+<div class="st" id="st"></div>
+</div>
+<div class="dock"><div>
+<button class="arrow" id="prev" aria-label="이전">←</button>
+<button class="cal" id="calbtn">📅 날짜 보기</button>
+<button class="arrow" id="next" aria-label="다음">→</button>
+</div></div>
+<div class="ov" id="ov"><div class="sheet" id="sheet">
+<div class="mt" id="mt"></div>
+<div class="grid" id="grid"></div>
+<div class="leg">● 기록한 날 &nbsp;·&nbsp; 테두리는 오늘</div>
+<div class="row"><button id="gotoday">오늘로 이동</button><button class="g" id="close">닫기</button></div>
+</div></div>
+<script>
+var CATS=[
+['좋아했던 것','#dbe9f6',['자주 들은 노래','다시 먹고 싶은 음식','마음에 든 장소','오래 남은 작품','눈길이 간 색','자주 입은 옷','손이 많이 간 문구','좋아하는 사진 한 장','소소한 즐거움','나만의 소중한 물건']],
+['새로 발견한 것','#d6ece5',['처음 해본 일','뜻밖의 취향','써먹어 본 배움','우연히 발견한 공간','추천받아 좋아진 것','새로 구독한 채널','생각보다 쉬웠던 일','생활을 바꾼 도구','나와 안 맞았던 것','최근 알게 된 사실']],
+['달라진 나','#e6e0f2',['덜 좋아하게 된 것','새로 생긴 관심사','달라진 소비 기준','조금 익숙해진 일','그만두기로 한 것','내 취향대로 한 선택','생각이 바뀐 계기','자주 했던 말','스스로 기특했던 일','올해 초와 달라진 나']],
+['마음에 남은 순간','#f6e1dc',['작은 행복을 느낀 순간','크게 웃었던 기억','에너지가 빠진 순간','기운을 되찾은 방법','혼자라서 좋았던 시간','함께라서 좋았던 시간','오래 남은 한마디','고마웠던 배려','기대와 달랐던 경험','요즘 마음을 차지한 것']],
+['앞으로 남길 것','#efe8d3',['올해 잘 산 물건','다시는 안 살 물건','돈 없이 즐긴 것','아깝지 않았던 시간','기억하고 싶은 하루','다시 꺼내고 싶은 취미','아직 해보고 싶은 일','이어가고 싶은 습관','내년에도 함께할 사람','기록하며 발견한 나']]
+];
+var Q=[];CATS.forEach(function(c,ci){c[2].forEach(function(q){Q.push({c:ci,q:q})})});
+var start=new Date(2026,10,12),now=new Date();now.setHours(0,0,0,0);
+var rawToday=Math.round((now-start)/864e5),todayIdx=Math.max(0,Math.min(49,rawToday));
+var cur=todayIdx,ans={},ok=true,timer=null,nm='나',calM=10;
+var $=function(i){return document.getElementById(i)};
+try{var raw=localStorage.getItem('my50');if(raw)ans=JSON.parse(raw);var n0=localStorage.getItem('my50name');if(n0)nm=n0}catch(e){ok=false}
+$('nm').value=nm;
+$('nm').oninput=function(){nm=this.value.trim()||'나';try{localStorage.setItem('my50name',this.value)}catch(e){}};
+if(!ok)$('st').textContent='이 환경에서는 자동 저장이 안 돼요. 기록 복사하기로 따로 보관해주세요';
+var WD='일월화수목금토';
+function dt(k){return new Date(start.getTime()+k*864e5)}
+function dstr(k){var d=dt(k);return (d.getMonth()+1)+'.'+d.getDate()+' ('+WD[d.getDay()]+')'}
+function has(k){return ans[k]&&ans[k].trim()}
+function count(a,b){var n=0;for(var k=a;k<b;k++)if(has(k))n++;return n}
+function stat(){var n=count(0,50);$('prog').textContent='작성 '+n+' / 50';$('bar').style.width=(n/50*100)+'%'}
+function drawChips(){
+ var h='';CATS.forEach(function(c,i){h+='<button class="chip'+(Math.floor(cur/10)===i?' on':'')+'" data-i="'+i+'"><b><i style="background:'+c[1]+';box-shadow:inset 0 0 0 1px rgba(0,0,0,.08)"></i>'+c[0]+'</b><small>'+(i*10+1)+'–'+(i*10+10)+'일차 · '+count(i*10,i*10+10)+'/10</small></button>'});
+ $('chips').innerHTML=h;
+ $('chips').querySelectorAll('.chip').forEach(function(b){b.onclick=function(){var i=+b.dataset.i,t=i*10;for(var k=i*10;k<i*10+10;k++){if(!has(k)){t=k;break}}go(t)}});
+ var on=$('chips').querySelector('.on');if(on&&on.scrollIntoView)on.scrollIntoView({inline:'center',block:'nearest'});
+}
+function draw(){
+ var x=Q[cur],c=CATS[x.c];
+ $('card').innerHTML='<div class="meta"><span class="tag" style="background:'+c[1]+'">'+c[0]+'</span><span>'+dstr(cur)+(cur===rawToday?' · TODAY':'')+'</span></div><div class="num">'+String(cur+1).padStart(2,'0')+'</div><p class="q">'+x.q+'</p><textarea id="t" placeholder="오늘의 나는…"></textarea>';
+ var t=$('t');t.value=ans[cur]||'';
+ function fit(){t.style.height='auto';t.style.height=Math.max(170,t.scrollHeight)+'px'}fit();
+ t.oninput=function(){fit();ans[cur]=t.value;stat();drawChips();clearTimeout(timer);timer=setTimeout(function(){try{localStorage.setItem('my50',JSON.stringify(ans));$('st').textContent='저장됨'}catch(e){$('st').textContent='저장하지 못했어요. 기록 복사하기로 보관해주세요'}},400)};
+ $('prev').disabled=cur===0;$('next').disabled=cur===49;
+ $('calbtn').textContent='📅 '+dstr(cur)+' · '+(cur+1)+'일차';
+ stat();drawChips();
+}
+function go(n){cur=Math.max(0,Math.min(49,n));draw();window.scrollTo({top:0,behavior:'smooth'})}
+$('prev').onclick=function(){go(cur-1)};$('next').onclick=function(){go(cur+1)};
+var sx=null,sy=null;
+$('card').addEventListener('touchstart',function(e){sx=e.touches[0].clientX;sy=e.touches[0].clientY},{passive:true});
+$('card').addEventListener('touchend',function(e){if(sx===null)return;var dx=e.changedTouches[0].clientX-sx,dy=e.changedTouches[0].clientY-sy;sx=null;if(Math.abs(dx)>80&&Math.abs(dx)>Math.abs(dy)*2&&!document.activeElement.matches('textarea'))go(cur+(dx<0?1:-1))});
+function drawCal(){
+ $('mt').innerHTML='';
+ [[10,'11월'],[11,'12월']].forEach(function(m){var b=document.createElement('button');b.textContent=m[1];b.className=calM===m[0]?'on':'';b.onclick=function(){calM=m[0];drawCal()};$('mt').appendChild(b)});
+ var h='';for(var i=0;i<7;i++)h+='<div class="wd">'+WD[i]+'</div>';
+ var first=new Date(2026,calM,1).getDay(),len=new Date(2026,calM+1,0).getDate();
+ for(var i=0;i<first;i++)h+='<div></div>';
+ for(var d=1;d<=len;d++){var idx=Math.round((new Date(2026,calM,d)-start)/864e5),en=idx>=0&&idx<50;
+  h+='<button class="d'+(en?'':' off')+(idx===cur?' cur':'')+(idx===rawToday?' td':'')+'" data-i="'+idx+'">'+d+(en&&has(idx)?'<u></u>':'')+'</button>'}
+ $('grid').innerHTML=h;
+ $('grid').querySelectorAll('.d').forEach(function(b){b.onclick=function(){closeCal();go(+b.dataset.i)}});
+}
+function openCal(){calM=dt(cur).getMonth();drawCal();$('ov').classList.add('show')}
+function closeCal(){$('ov').classList.remove('show')}
+$('calbtn').onclick=openCal;$('close').onclick=closeCal;
+$('ov').onclick=function(e){if(e.target===this)closeCal()};
+$('gotoday').onclick=function(){closeCal();go(todayIdx)};
+function build(){var L=[nm+'의 올해의 나 수집하기 (2026.11.12 - 12.31)',''];Q.forEach(function(x,k){var a=(ans[k]||'').trim();if(a)L.push(String(k+1).padStart(2,'0')+'. '+x.q+' ['+CATS[x.c][0]+' · '+dstr(k)+']',a,'')});return L.join(String.fromCharCode(10))}
+$('copy').onclick=function(){var t=build();try{navigator.clipboard.writeText(t).then(function(){$('st').textContent='복사됐어요'},function(){$('st').textContent='복사하지 못했어요. 텍스트로 저장을 눌러주세요'})}catch(e){$('st').textContent='복사하지 못했어요. 텍스트로 저장을 눌러주세요'}};
+$('save').onclick=function(){try{var a=document.createElement('a');a.href=URL.createObjectURL(new Blob([build()],{type:'text/plain'}));a.download='올해의나_'+nm+'.txt';document.body.appendChild(a);a.click();a.remove();$('st').textContent='파일로 저장했어요'}catch(e){$('st').textContent='저장하지 못했어요. 기록 복사하기를 써주세요'}};
+(function(){for(var i=0;i<14;i++){var e=document.createElement('i');e.className='sn';e.style.cssText='left:'+Math.random()*100+'%;animation-duration:'+(9+Math.random()*10)+'s;animation-delay:-'+Math.random()*15+'s;width:'+(3+Math.random()*4)+'px;height:'+(3+Math.random()*4)+'px';document.body.appendChild(e)}})();
+draw();
+</script>
+</body>
+</html>
